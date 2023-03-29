@@ -1,0 +1,14 @@
+\xsection{Basic outline}
+Multiphysics software performing high-fidelity modeling and simulations are the primary tools used for design optimization of floating offshore wind turbines and their controllers.
+Early stage design studies simply look to understand the properties and  behaviour of the system, to create a framework that can help design the system. 
+For early stage design studies, the use of high-fidelity modelling tools is counter productive, as such tools are computationally expensive and time consuming.
+To mitigate this drawback, reduced order models are developed by designers, that capture just the essential physics of the system. 
+Results from these lower order models are first validated against the simulations from high-fidelity tools.
+After validation, thee models are then linearized around set point values and used for controller design.
+Well-established methods from linear systems theory, can then be used to understand the behaviour of these linear models.
+
+Another way to mitigate the expense is to obtain linearized models directly from these high-fidelity modelling tools. 
+A major drawback with these linearized models is that these models become inaccurate when the system moves away from the operating points.
+Due to these inaccuracies, these models by themselves, cannot be used extensively for early stage design studies.
+In this work, we discuss the use of Linear Parameter Varying (LPV) models to overcome the drawbacks with these linearized model.
+We show that the new LPV models can be used to create accurate open loop optimal control trajectories.

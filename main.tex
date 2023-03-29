@@ -1,0 +1,101 @@
+\documentclass[10pt,twocolumn]{config/asme2e}
+\special{papersize=8.5in,11in}
+
+\input{config/config}
+
+\input{config/front}
+
+\usepackage{amsmath}
+
+%---------------------------------------------------------------------
+\begin{document}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \setlength{\headsep}{0pt}
+
+%\setlength{\topskip}{0pt}
+\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
+
+% equations
+\abovedisplayshortskip=3pt
+\belowdisplayshortskip=3pt
+\abovedisplayskip=3pt
+\belowdisplayskip=3pt
+
+\titlespacing*{\section}{0pt}{18pt plus 1pt minus 1pt}{3pt plus 0.5pt minus 0.5pt}
+
+\titlespacing*{\subsection}{0pt}{9pt plus 1pt minus 0.5pt}{1pt plus 0.5pt minus 0.5pt}
+
+\titlespacing*{\subsubsection}{0pt}{9pt plus 1pt minus 0.5pt}{1pt plus 0.5pt minus 0.5pt}
+
+\maketitle
+
+%---------------
+\begin{abstract}\noindent
+\textit{\blindtext
+}
+\end{abstract}
+
+\vspace{1ex}
+\noindent Keywords:~\blindtext
+
+% suggestions (not in a specific order):
+% control co-design
+% floating offshore wind turbines
+% linear parameter-varying models
+% optimization?
+% optimal control?
+% renewable energy systems?
+% active system design?
+
+
+%---------------
+% \clearpage
+\input{input/introduction.tex}
+%---------------
+% \clearpage
+\input{input/Section2}
+%----------------
+% \clearpage
+\input{input/Section3}
+%---------------
+% \clearpage
+\input{input/Section4}
+%---------------
+%\clearpage
+\input{input/Section5}
+%---------------
+%\clearpage
+\input{input/conclusion.tex}
+%--------------
+%\clearpage
+\begin{acknowledgment}
+\blindtext[1]
+\end{acknowledgment}
+
+%--------------------------
+% \clearpage
+\renewcommand{\refname}{REFERENCES}
+\bibliographystyle{.config/asmems4}
+\begin{mySmall}
+%\nocite{*} % remove later, displays all references
+\bibliography{References}
+\end{mySmall}
+
+%--------------------------
+% \clearpage
+% \onecolumn
+% \xneed{Will be removed in the final version.}
+% % This will be removed in the final version.
+% \tableofcontents
+% \listoffigures
+% \listoftables
+% -----------
+
+%---------------
+%  \clearpage
+% \input{input/working.tex}
+
+
+\end{document}
